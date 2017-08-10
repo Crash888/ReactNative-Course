@@ -12,7 +12,8 @@ class ListItem extends Component {
 		super();
 
 		if (Platform.OS === 'android') {
-      		UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
+      		UIManager.setLayoutAnimationEnabledExperimental && 
+      		UIManager.setLayoutAnimationEnabledExperimental(true);
     	}
 	}
 
