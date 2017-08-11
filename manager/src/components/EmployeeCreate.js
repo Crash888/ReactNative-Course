@@ -32,11 +32,9 @@ class EmployeeCreate extends Component {
 						Shift
 					</Text>
 					<Picker
-						style={{flex: 1}}
 						selectedValue={this.props.shift}
-						onValueChange={value => this.props.employeeUpdate({ prop: 'shift', value: value})}
-					>
-						<Picker.Item label="Monday" value="Monday" />
+						onValueChange={value => this.props.employeeUpdate({ prop: 'shift', value: value})}>
+						<Picker.Item label="Monday" value="Monday" itemStyle={{height: 2}}/>
 						<Picker.Item label="Tuesday" value="Tuesday" />
 						<Picker.Item label="Wednesday" value="Wednesday" />
 						<Picker.Item label="Thursday" value="Thursday" />
